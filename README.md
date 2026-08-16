@@ -1,4 +1,4 @@
-is this readme containt good "# Cognifyz Full Stack Development Internship 
+# Cognifyz Full Stack Development Internship 
  
 This repository contains the tasks and projects completed 
 during my Full Stack Development Internship at Cognifyz Technologies. 
