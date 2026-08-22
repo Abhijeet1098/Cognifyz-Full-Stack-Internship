@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb
+    );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+
+    animation: fadeIn 1s ease;
+}
+
+.tagline {
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 70px);
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background: white;
+    color: #1e3a8a;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Registration */
+
+.registration-section {
+    padding: 90px 20px;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.section-heading h2,
+.about-content h2 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.form-container {
+    max-width: 700px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.submit-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.3s, background 0.3s;
+}
+
+.submit-button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* About */
+
+.about-section {
+    padding: 90px 20px;
+
+    background: #e5e7eb;
+
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.about-content p:last-child {
+    font-size: 17px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+}
+
+/* ============================= */
+/* Advanced Animations */
+/* ============================= */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Hero animation */
+.hero-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+
+/* Hero button */
+.hero-button {
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Registration form animation */
+.form-container {
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Submit button */
+.submit-button {
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Navigation links */
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+
+/* Section heading */
+.section-heading {
+    animation: fadeInUp 1s ease-out;
+}
+
+
+/* About section */
+.about-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ============================= */
+/* Mobile Responsive Design */
+/* ============================= */
+
+@media (max-width: 576px) {
+
+    .hero {
+        min-height: 70vh;
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-button {
+        padding: 12px 22px;
+    }
+
+    .registration-section {
+        padding: 60px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .about-section {
+        padding: 60px 15px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
+}
