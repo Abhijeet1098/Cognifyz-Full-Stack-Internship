@@ -7,7 +7,7 @@ This repository contains the tasks and projects completed during my Full Stack D
 - [x] Task 1 – HTML Structure and Basic Server Interaction
 - [x] Task 2 – Inline Styles, Basic Interaction, and Server-Side Validation
 - [x] Task 3 – Advanced CSS Styling and Responsive Design
-- [ ] Task 4 – Complex Form Validation and Dynamic DOM Manipulation
+- [x] Task 4 – Complex Form Validation and Dynamic DOM Manipulation
 - [ ] Task 5 – API Integration and Front-End Interaction
 - [ ] Task 6 – Database Integration and User Authentication
 - [ ] Task 7 – Advanced API Usage and External API Integration
