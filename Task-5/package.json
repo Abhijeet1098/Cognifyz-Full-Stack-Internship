@@ -1,16 +1,13 @@
 {
-  "name": "task-5",
+  "name": "cognifyz-task5-api-integration",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Cognifyz Full Stack Internship - Task 5: API Integration and Front-End Interaction",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "ejs": "^6.0.1",
-    "express": "^5.2.1"
+    "express": "^4.19.2"
   }
 }
